@@ -24,7 +24,6 @@ resource "aws_instance" "myec2" {
   }
   
   
-
   # Attach the Security Group to the EC2 instance
   vpc_security_group_ids = [var.security_group_id]
   user_data = var.user_data
