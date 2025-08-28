@@ -1,17 +1,11 @@
-variable "user_data" {
-  description = "User data script to run on instance launch"
-  type        = string
-  default     = ""
-}
-variable "ami_id" {
-  type = string
-  description = "AMI to use"
-}
-
 variable "instance_type" {
   type = string
   default = "t2.micro"
   description = "EC2 instance type"
+}
+
+variable "user_data" { 
+  description = "User data script to initialize the instance"
 }
 
 variable "instance_count" {

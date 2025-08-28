@@ -8,10 +8,6 @@ variable "aws_availability_zone" {
   description = "AWS availability for deployment"
 }
 
-variable "ami_id" {
-  type = string
-  description = "AMI to use"
-}
 
 variable "instance_type" {
   type = string
